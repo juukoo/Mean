@@ -1,0 +1,36 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+</head>
+<% include ../partials/head %>
+<body>
+<div id="wrapper">
+   <div id="branding">
+    <% include ../partials/header %>
+   </div>
+   <div style="overflow-x:auto;">
+     <table id="bookTable">
+        <tr>
+          <th>id</th><th>Name</th><th>Country</th><th>Date</th><th>Message</th>
+        </tr> <!-- for silmukka käy läpi guest.json fileen taulukon sisällä, joka on esitelty app.js fileessä -->
+        <% for (var i = 0; i < data.length; i++) { %>
+        <tr>
+          <td><%= data[i].id %></td>
+          <td><%= data[i].username %></td>
+          <td><%= data[i].country %></td>
+          <td><%= data[i].date %></td>
+          <td><%= data[i].message %></td>
+        </tr>
+        <% } %>
+      </table>
+	  </div>
+   <div id="footer">
+
+   </div>
+ </div>
+    <div id="footerContainer">
+    <% include ../partials/fContainer %>
+   </div>
+</body>
+</html>
