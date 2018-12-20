@@ -1,0 +1,57 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <% include ../partials/head %>
+</head>
+
+<body>
+<div id="wrapper">
+   <div id="branding">
+     <h1> Movie Database API test </h1>
+   </div>
+   <div id="contant">
+    <div class="contant_1">
+      <div style="overflow-x:auto;">
+        <table id="bookTable">
+           <tr>
+             <th>API routes for movie DB</th><th>Description</th>
+           </tr>
+           <tr>
+               <td><input type="button" onclick="location.href='http://localhost:8081/api/getall';" value="GetAll"></td>
+               <td>Lists movies from mLab DB limited to 10</td>
+           </tr>
+           <tr>
+              <td><input type="button" onclick="location.href='http://localhost:8081/api/movie';" value="GetById"></td>
+              <td>Lists one movie by id from mLab DB</td>
+          </tr>
+          <tr>
+             <td><input type="button" onclick="location.href='http://localhost:8081/addmovie';" value="Post data"></td>
+             <td>Click to move to addmovie page</td>
+         </tr>
+         <tr>
+            <td><input type="button" onclick="location.href='http://localhost:8081/api/updatemov';" value="Update"></td>
+            <td>Click to update movie data</td>
+        </tr>
+        <tr>
+           <td><input type="button" onclick="location.href='http://localhost:8081/api/deletemov';" value="Delete"></td>
+           <td>Click to delete one movie</td>
+       </tr>
+
+         </table>
+   </div>
+   </div>
+   <div class="midBox1">
+
+	  </div>
+   <div class="midBox2">
+
+   </div>
+   <div id="footer">
+
+   </div>
+ </div>
+    <div id="footerContainer">
+
+   </div>
+</body>
+</html>
