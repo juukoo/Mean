@@ -38,7 +38,7 @@ router.get("/movie", function(req, res) {
 
 // update on movie data in db router.put / cannot Get error
 router.get("/updatemov", function(req, res) {
-  //Jos tähän laittaa router.put, antaa app errorin cannot GET /api/updateData
+
   var mongoose = require("mongoose");
   require("./models.js");
 
@@ -180,7 +180,7 @@ router.get("/getall", function(req, res) {
 // });
 
 
-//delete movie by id / router.delete antoi cannot GET errorin, jota en saanut toimimaan
+//delete movie
 router.get("/deletemov", function(req, res) {
   var mongoose = require("mongoose");
   require("./models.js");

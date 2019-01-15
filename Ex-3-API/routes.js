@@ -21,9 +21,7 @@ router.get("/addmovie", function(req, res) {
 
 
 
-//Tässä datan tallentamisessa on/oli jonkin ongelma mitä en saanut selville
-//Kun tämän ajaa routes puolelta niin data tallentuu databaseen, mutta jos
-//tämä on api puolella niin tulle error cannot POST
+
 router.post("/addmovie", (req, res) => {
   var mongoose = require("mongoose");
   require("./models.js");
